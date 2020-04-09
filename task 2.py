@@ -1,28 +1,36 @@
 import string
 import random
 
-x = input('Enter your First name:')
-print('Hello, ' + x)
-
-y = input('Enter your Last name:')
-print('Hello, ' + x + y)
-
-z = input(' Enter your Email Address:')
-print(z)
+# user inputs
+x = input('Enter your First name: \t')
+y = input('Enter your Last name: \t')
+z = input('Enter your Email Address: \t')
 
 #password generator
-length = 9
+length = 5
 random.choice(string.ascii_letters)
-password = ''.join (random.choice("(string.ascii_letters") for i in range(length) )
+added = ''.join (random.choice("(string.ascii_letters") for i in range(length) )
+
+# password 
+first_name_part = x[:2]
+second_name_part = y[-2:]
+password = first_name_part + second_name_part + added
 print (password)
 
-#Password validation
-if (user is satisfied with password)
-print (x + y + z)
+# Password validation
+satisfied = input('Are you satisfied with password? Yes or NO: ')
 
+if satisfied.lower = No:
+password = input('input your desired password: \t'
+ if len(password) >= 7:
+           print("'your password is set to: \t '", password)
 else:
-    
-     P = input('Please Enter your Preffered Password:')
-     print( P)
+password = input("enter a password that is 7 characters long: ")
+    else :
+         print("Congratulations", x, "your password is:", password)
 
-if P ==7
+
+#user data container
+ First user  = {'firstname': '', 'Secondname': '', 'password': ''}
+   Second user = {'firstname': '', 'Secondname': '', 'password':'' }
+   print ("First user+ Second user")
